@@ -32,25 +32,9 @@ def main():
         verbose=False
     )
     model_recovery_xgb = XGBClassifier(
-        n_estimators=1000,
-        learning_rate=0.01,
-        max_depth=8,
-        subsample=0.8,
-        colsample_bytree=0.8,
-        reg_alpha=0.01,
-        reg_lambda=1.0,
-        random_state=42,
         use_label_encoder=False,
-        eval_metric='logloss'
     )
     model_recovery_light = lgb.LGBMClassifier(
-        boosting_type='gbdt',
-        objective='binary',
-        metric='binary_logloss',
-        learning_rate=0.1,
-        num_leaves=31,
-        max_depth=-1,
-        n_estimators=1000,
         verbose=-1
     )
     
@@ -70,25 +54,9 @@ def main():
         verbose=False
     )
     model_drop_xgb = XGBClassifier(
-        n_estimators=1000,
-        learning_rate=0.01,
-        max_depth=8,
-        subsample=0.8,
-        colsample_bytree=0.8,
-        reg_alpha=0.01,
-        reg_lambda=1.0,
-        random_state=42,
         use_label_encoder=False,
-        eval_metric='logloss'
     )
     model_drop_light = lgb.LGBMClassifier(
-        boosting_type='gbdt',
-        objective='binary',
-        metric='binary_logloss',
-        learning_rate=0.01,
-        num_leaves=31,
-        max_depth=-1,
-        n_estimators=1000,
         verbose=-1
     )
     

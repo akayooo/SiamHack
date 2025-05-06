@@ -54,6 +54,11 @@ python3 vost_ultimate.py --test_folder_path <path_to_test_folder>
 
 ## Архитектура решения
 
+<p align="center">
+  <img src="./images/арх_2.jpg" alt="Архитектура 2" width="45%" />
+  <img src="./images/арх_1.jpg" alt="Архитектура 1" width="45%" />
+</p>
+
 ---
 
 ## Наши преимущества
